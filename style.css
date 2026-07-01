@@ -1,6 +1,11 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 body {
     width: 1200px;
     margin: 0 auto;
+
 }
 #container {
     display: flex;
@@ -12,13 +17,12 @@ body {
 }
 
 .square {
-    width: 58px;
-    height: 58px;
     background-color: #3498db;
     border: 1px solid #d9e8f3;
     transition: transform 0.2s;
 }
 
 .square:hover {
+    
     transform: scale(1.05);
 }
